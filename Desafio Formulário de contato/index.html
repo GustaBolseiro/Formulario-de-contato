@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+
+    <style>
+        body {
+            margin-top: 3%;
+            background-color:;
+           
+        }
+
+        fieldset {
+            width: 600px;
+            margin: auto;
+        }
+
+        legend {
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        label {
+            font-size: 23px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        @media screen and (max-width: 500px) {           
+             
+            fieldset {
+                max-width: 90%;
+            }
+
+            legend{
+                font-size: 27px;
+            }
+
+            textarea{
+                width: 90%;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>
+                    Entre em contato
+                </legend>
+                <br>
+                <label> Assunto:
+                    <select name="assunto">
+                        <option value="spt">Suporte</option>
+                        <option value="sgt">Sugestão</option>
+                        <option value="rcm">Reclamação</option>
+                        <option value="avl">Avaliação</option>
+                    </select>
+                </label>
+                <br><br>
+                <label for="nome">Nome Completo:</label>
+                <br>
+                <input id="nome" type="text" placeholder="Seu nome">
+                <br><br>
+                <label for="email">E-mail:</label>
+                <br>
+                <input id="email" type="email" name="email" placeholder="Seu e-mail">
+                <br><br>
+                <label id="msg" type="text">Mensagem:</label>
+                <br>
+                <textarea id="msg" name="mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
+                <br><br>
+                <input type="checkbox" name="novidades"> Aceito receber novidades por e-mail.
+                <br><br>
+                <bottom>
+                    <input type="submit" value="Enviar">
+                </bottom>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
